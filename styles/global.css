@@ -26,6 +26,8 @@ html{
 }
 
 body{
+    display: flex;
+
     height: 100vh;
     background: var(--background);
 }
@@ -83,18 +85,27 @@ button:hover,
     filter: brightness(1.3);
 }
 
-button > img
-.button > img{
+button > img,
+.button > img       {
     margin-right: 1rem;
     width: 2rem;
 }
 
-button.outLined,
-.button.outLined{
+button.outlined,
+.button.outlined{
     background: var(--white);    
     border: .2rem solid var(--blue);
     color: var(--blue);
 }
 
 
+/* Header */
 
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+}
