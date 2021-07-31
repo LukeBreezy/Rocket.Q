@@ -21,6 +21,7 @@ html{
     --grey-blue: #A1B2CD;
     --grey-light: #E5EAF1; 
     
+    --light-blue: #E0ECFF;
     /* Transforma o padrão de pixels do navegador para 10px. Antes eram 16px*/
     font-size: 62.5%;
 }
