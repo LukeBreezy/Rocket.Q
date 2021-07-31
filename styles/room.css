@@ -38,10 +38,6 @@
     padding: 1.3rem 3.2rem;
 }
 
-/* #room header .buttons .button:nth-child(2) img{
-
-} */
-
 /* QUESTION FORM */
 
 #question-form h2{
@@ -116,7 +112,7 @@
 
     padding: 2.4rem;
     margin-bottom: .8rem;
-    height: 13.6rem;
+    min-height: 13.6rem;
     width: 100%;
 
     border-radius: 0 .8rem .8rem .8rem;
@@ -124,7 +120,7 @@
 
 #questions .questions-wrapper .questions-content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #questions .questions-wrapper .questions-content .user{
@@ -138,12 +134,17 @@
     clip-path: circle();
 }
 
-#questions .questions-wrapper .questions-content .question p{
+#questions .questions-wrapper .questions-content p{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
     color: var(--black);
-    line-height: 2.18rem;
+
+    word-break: break-word;
+
+    display: flex;
+    align-items: center;
+    min-height: 5.2rem;
 }
 
 #questions .questions-wrapper .actions{
@@ -167,4 +168,13 @@
 
 #questions .questions-wrapper .actions a img{
     margin-right: .8rem;
+}
+
+/* QUESTION READ */
+#questions .questions-wrapper.read{
+    background: var(--grey-medium);
+}
+
+#questions .questions-wrapper.read .questions-content .user{
+    background: var(--grey-blue);
 }

@@ -10,6 +10,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,6 +113,27 @@
                             <img src="assets/avatar.svg" alt="Avatar">
                         </div>
                         <div class="question">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure doloribus minima nostrum perferendis dolorum similique iusto ullam ratione cum dolorem repudiandae, temporibus dolores quas sed animi consequatur id nulla accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illum officiis, harum laboriosam quis repudiandae pariatur dolor nam asperiores corporis sint! Sint itaque molestiae modi distinctio deleniti fugiat voluptatum doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nulla numquam illo placeat quibusdam reprehenderit pariatur inventore neque sunt a maiores quae dolores vero ad, fuga quidem aliquam? Aliquid, cum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio magnam voluptatum voluptatem! Labore minus aliquam nemo! Perspiciatis distinctio natus optio expedita deleniti odit veritatis. Obcaecati dolorum beatae officia facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatibus eum et, dolores iusto architecto cum, dignissimos rem quae error voluptatum aliquam suscipit cupiditate consequuntur nostrum accusamus perferendis tempore iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatum delectus enim tempore architecto, magnam perferendis suscipit dolorum aut totam voluptatem saepe, nobis, fuga voluptatibus amet veniam molestias quod quis!</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="" class="check">
+                            <img src="assets/check.svg" alt="Marcar como lido">
+                            Marcar como lida
+                        </a>
+                        <a href="" class="trash">
+                            <img src="assets/trash.svg" alt="Excluir">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
+
+                <div class="questions-wrapper read">
+                    <div class="questions-content">
+                        <div class="user">
+                            <img src="assets/avatar.svg" alt="Avatar">
+                        </div>
+                        <div class="question">
                             <p>O que é Typescript?</p>
                         </div>
                     </div>
@@ -127,8 +150,24 @@
                 </div>
 
             </section>
-
         </main>
+    </div>
+    
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Exluir Pergunta</h2>
+            <p>Tem certeza que você deseja exluir esta pergunta?</p>
+            <form action="" >
+                <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha admin">
+
+                <div class="buttons">
+                    <div class="button grey">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+
+            </form>
+        </div>
     </div>
 </body>
 </html>
