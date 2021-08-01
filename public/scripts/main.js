@@ -47,7 +47,16 @@ function handleClick(event, check = true){
 
     event.preventDefault()
 
+    const roomId = document.querySelector('#room-id').dataset.id
+    const form = document.querySelector('.modal form')
+    const questionId = event.target.dataset.id
+    
     const text = check ? "Marcar como lida" : "Excluir"
+    const slug = check ? "check" : "delete"
+
+    form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
+
+
 
     modalTitle.innerHTML = `${text} está pergunta`
     modalDescription.innerHTML = `Tem certeza que você deseja ${text.toLocaleLowerCase()} está pergunta?`
