@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/room.css">
+        <link rel="stylesheet" href="styles/modal.css">
+        
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        
+        <!-- Scripts -->
+        <script src="scripts/main.js" defer type="module"></script>
+
+
+        <title>Rocket.Q - Q&A</title>
+</head>
+<body>
+
+    <div id="room" class="content">
+        <header>
+
+            <a href="./home.html">
+                <img src="assets/logo.svg" alt="Rocket.Q Logo"/>
+            </a>
+
+            <div class="buttons">
+        
+                <div class="button outlined">
+                    #123456
+                    <img src="assets/copy.svg" alt="Copiar número da sala">
+                </div>
+            
+                <a class="button" href="#">
+                    <img src="assets/users-white.svg" alt="Criar uma sala">
+                    Criar Sala
+                </a>
+        
+            </div>
+        </header>
+
+        <main>
+            <section id="question-form">
+                <h2>Faça sua pergunta</h2>
+                <form action="">
+                    <label class="sr-only" for-id="question">O que você quer perguntar?</label>
+                    <textarea id="question" name="question" placeholder="O que você quer perguntar?"></textarea>
+                
+                    <footer>
+                        <div>
+                            <img src="assets/lock.svg" alt="Cadeado">
+                            Está pergunta é anônima
+                        </div>
+                        <button>Enviar</button>
+                    </footer>
+                </form>
+            </section>
+
+            <section id="questions">
+                <h2 class="sr-only">Perguntas da comunidade</h2>
+
+                <div class="questions-wrapper">
+                    <div class="questions-content">
+                        <div class="user">
+                            <img src="assets/avatar.svg" alt="Avatar">
+                        </div>
+                        <div class="question">
+                            <p>Qual a diferença entre const, let e var em Javascript?</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="check">
+                            <img src="assets/check.svg" alt="Check">
+                            Marcar como lida
+                        </a>
+                        <a href="#" class="delete">
+                            <img src="assets/trash.svg" alt="Lixeira">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="questions-wrapper">
+                    <div class="questions-content">
+                        <div class="user">
+                            <img src="assets/avatar.svg" alt="Avatar">
+                        </div>
+                        <div class="question">
+                            <p>O que é Javascript?</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="check">
+                            <img src="assets/check.svg" alt="Marcar como lido">
+                            Marcar como lida
+                        </a>
+                        <a href="#" class="delete">
+                            <img src="assets/trash.svg" alt="Excluir">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
+
+                <div class="questions-wrapper">
+                    <div class="questions-content">
+                        <div class="user">
+                            <img src="assets/avatar.svg" alt="Avatar">
+                        </div>
+                        <div class="question">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quas optio suscipit distinctio iusto hic expedita accusamus quia explicabo sequi labore soluta nesciunt, necessitatibus, ratione quidem nobis nam incidunt molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deserunt sed aliquam laudantium totam beatae eaque nihil dolor sapiente odio placeat consequuntur minima, aliquid facere, voluptas officiis error ratione temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga assumenda doloribus quasi, debitis laborum, voluptates dolores est perferendis rerum doloremque quo facere vitae nobis accusamus tempore delectus amet magnam nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam labore nostrum itaque laboriosam modi odit id hic sequi suscipit minus, perferendis, quis vero! Distinctio vitae commodi voluptas fuga, praesentium dolorem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="check">
+                            <img src="assets/check.svg" alt="Marcar como lido">
+                            Marcar como lida
+                        </a>
+                        <a href="#" class="delete">
+                            <img src="assets/trash.svg" alt="Excluir">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
+
+                <div class="questions-wrapper read">
+                    <div class="questions-content">
+                        <div class="user">
+                            <img src="assets/avatar.svg" alt="Avatar">
+                        </div>
+                        <div class="question">
+                            <p>O que é Typescript?</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="check">
+                            <img src="assets/check.svg" alt="Check">
+                            Marcar como lida
+                        </a>
+                        <a href="#" class="delete">
+                            <img src="assets/trash.svg" alt="Lixeira">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Exluir Pergunta</h2>
+            <p>Tem certeza que você deseja exluir esta pergunta?</p>
+            <form action="" >
+                <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha admin">
+
+                <div class="buttons">
+                    <div class="button grey cancel">Cancelar</div>
+                    <button class="red confirm">Sim, excluir</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
