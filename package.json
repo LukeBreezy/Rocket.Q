@@ -4,7 +4,8 @@
   "description": "Roquet.Q - Projeto de perguntas e resposta (NLW - Missão Discover)",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "repository": {
     "type": "git",
